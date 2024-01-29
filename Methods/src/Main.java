@@ -19,5 +19,5 @@ public class Main {
 	static String notVoidMethod (String string, int number) {
 		return String.format("This is not void method with string argument %s and integer argument %d.", string, number);
 	} 
-
+     
 }
