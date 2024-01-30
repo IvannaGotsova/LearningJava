@@ -17,6 +17,13 @@ public class Main {
 		replaceWords("banana", "car");
 		replaceWords("banana", "kiwi");
 		reverseWords();
+		removeDuplicates();	
+		
+	}
+	
+	static void removeDuplicates() {
+		String [] fruits = {"kiwi", "cherry", "orange", "berries", "cherry", "strawberries"};
+		List fruitsList = Arrays.asList(fruits);
 		
 		
 	}
@@ -24,10 +31,12 @@ public class Main {
 	static void reverseWords() {
 		String [] fruits = {"kiwi", "cherry", "orange", "berries", "strawberries"};
 		List fruitsList = Arrays.asList(fruits);
+		System.out.print(fruitsList.toString());
 		
 		if (fruitsList.size() > 1) {
 			Collections.reverse(fruitsList);
-			System.out.println(fruitsList.toString());
+			System.out.print(fruitsList.toString());
+			System.out.println();
 		} else {
 			System.out.println(fruitsList.toString());
 		}
