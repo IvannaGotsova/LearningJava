@@ -6,7 +6,11 @@ public class Main {
 
 		System.out.println("Hello World");
 		System.out.println(simpleCalculator(2, 3, '+'));
-		
+		System.out.println(greetMessage("Peter", "Petrov"));
+	}
+	
+	static String greetMessage(String first, String last) {
+		return "Hello " + first + " " + last;
 	}
 	
 	static double simpleCalculator(double first, double second, char x) {
