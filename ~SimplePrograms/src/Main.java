@@ -11,8 +11,26 @@ public class Main {
 		System.out.println(greetMessage("Peter", "Petrov"));
 		loopWithStep(4);
 		System.out.println(findName("Ivan"));
+		checkGrade(5.55);
 
-		
+	}
+	
+
+	
+	static void checkGrade (double grade) {
+		if (grade >= 5.50 && grade <= 6) {
+			System.out.println("You have an excellent grade");
+		} else if (grade >= 4.50 && grade < 6) {
+			System.out.println("You have a very good grade");
+		} else if (grade >= 3.50 && grade < 5) {
+			System.out.println("You have a good grade");
+		} else if (grade >= 3 && grade < 4) {
+			System.out.println("You have a fair grade");
+		} else if (grade >= 2 && grade < 3) {
+			System.out.println("You have a poor grade");
+		} else {
+			System.out.println("Please, insert valid number");
+		} 
 	}
 	
 	static boolean findName(String name) {
