@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -15,8 +16,21 @@ public class Main {
 		checkDay("Sunday");
 		replaceWords("banana", "car");
 		replaceWords("banana", "kiwi");
+		reverseWords();
 		
 		
+	}
+	
+	static void reverseWords() {
+		String [] fruits = {"kiwi", "cherry", "orange", "berries", "strawberries"};
+		List fruitsList = Arrays.asList(fruits);
+		
+		if (fruitsList.size() > 1) {
+			Collections.reverse(fruitsList);
+			System.out.println(fruitsList.toString());
+		} else {
+			System.out.println(fruitsList.toString());
+		}
 	}
 	
 	static void replaceWords(String newWord, String oldWord) {
