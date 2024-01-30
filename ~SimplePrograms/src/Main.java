@@ -13,9 +13,24 @@ public class Main {
 		System.out.println(findName("Ivan"));
 		checkGrade(5.55);
 		checkDay("Sunday");
+		replaceWords("banana", "car");
+		replaceWords("banana", "kiwi");
+		
 		
 	}
 	
+	static void replaceWords(String newWord, String oldWord) {
+		String [] fruits = {"kiwi", "cherry", "orange", "berries", "strawberries"};
+		List fruitsList = Arrays.asList(fruits);
+		
+		if (fruitsList.contains(oldWord)) {
+			int index = fruitsList.indexOf(oldWord);
+			fruitsList.set(index, newWord);
+			System.out.println(fruitsList.toString());
+		} else {
+			System.out.println("There is no such fruit");
+		}
+	}
 
 	static void checkDay(String day) {
 		switch (day) {
