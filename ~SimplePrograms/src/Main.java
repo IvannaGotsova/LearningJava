@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class Main {
@@ -24,8 +25,10 @@ public class Main {
 	static void removeDuplicates() {
 		String [] fruits = {"kiwi", "cherry", "orange", "berries", "cherry", "strawberries"};
 		List fruitsList = Arrays.asList(fruits);
-		
-		
+		System.out.print(fruitsList.toString());
+		HashSet<String> fruitsHashSet = new HashSet<>(fruitsList); 
+		System.out.print(fruitsHashSet.toString());
+		System.out.println();
 	}
 	
 	static void reverseWords() {
