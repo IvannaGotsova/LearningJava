@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class Main {
 
@@ -13,6 +15,9 @@ public class Main {
 		int [] numbers = {5, 6, 7, 8, 9};
 		System.out.println(minNumber(numbers));
 		System.out.println(maxNumber(numbers));
+		String [] words = {"water", "freah", "smoothie", "juice", "food"};
+		String [] newWords = (replaceWords("lemonade", "food", words));
+		System.out.println(Arrays.toString(newWords));
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -60,6 +65,15 @@ public class Main {
 			}
 		}
 		return max;
+	}
+	
+	static String[] replaceWords(String newWord, String oldWord, String [] words) {
+		for (int i = 0; i < words.length; i++) {
+			if (words[i] == oldWord) {
+				words[i] = newWord;
+			}
+		}
+		return words;
 	}
 	
 	
