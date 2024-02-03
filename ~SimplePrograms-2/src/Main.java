@@ -22,6 +22,7 @@ public class Main {
 		System.out.println(Arrays.toString(newWords));
 		reverseNumbers(3, 6);
 		currentDate();
+		currentTime();
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -93,5 +94,10 @@ public class Main {
 		 System.out.println(formatter.format(date));  
 	}
 	
+	static void currentTime () {
+		 SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");  
+		 Date date = new Date();  
+		 System.out.println(formatter.format(date));  
+	}
 
 }
