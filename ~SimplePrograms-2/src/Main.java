@@ -1,5 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.text.SimpleDateFormat;  
+import java.util.Date;  
 
 public class Main {
 
@@ -19,6 +21,7 @@ public class Main {
 		String [] newWords = (replaceWords("lemonade", "food", words));
 		System.out.println(Arrays.toString(newWords));
 		reverseNumbers(3, 6);
+		currentDate();
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -82,6 +85,12 @@ public class Main {
 		second = first;
 		first = temp;
 		System.out.println(first + " " + second);
+	}
+	
+	static void currentDate () {
+		 SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
+		 Date date = new Date();  
+		 System.out.println(formatter.format(date));  
 	}
 	
 
