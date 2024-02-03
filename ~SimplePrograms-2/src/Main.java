@@ -18,6 +18,7 @@ public class Main {
 		String [] words = {"water", "freah", "smoothie", "juice", "food"};
 		String [] newWords = (replaceWords("lemonade", "food", words));
 		System.out.println(Arrays.toString(newWords));
+		reverseNumbers(3, 6);
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -76,7 +77,12 @@ public class Main {
 		return words;
 	}
 	
-	
+	static void reverseNumbers (int first, int second) {
+		int temp = second;
+		second = first;
+		first = temp;
+		System.out.println(first + " " + second);
+	}
 	
 
 }
