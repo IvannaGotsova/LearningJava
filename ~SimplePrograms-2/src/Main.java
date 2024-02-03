@@ -10,6 +10,8 @@ public class Main {
 		sumOfTwoEvenNumbers(4, 5); 
 		sumOfTwoOddNumbers(3, 5);
 		sumOfTwoOddNumbers(4, 5); 
+		int [] numbers = {5, 6, 7, 8, 9};
+		System.out.println(minNumber(numbers));
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -37,6 +39,16 @@ public class Main {
 		} else {
 		System.out.println("Not Odd Numbers");
 		}
+	}
+	
+	static int minNumber(int [] numbers) {
+		int min = numbers[0];
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] < min) {
+				min = numbers[i];
+			}
+		}
+		return min;
 	}
 	
 	
