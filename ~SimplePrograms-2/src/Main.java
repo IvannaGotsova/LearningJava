@@ -8,6 +8,8 @@ public class Main {
 		splitString("Something Anything Nothing Everything");
 		sumOfTwoEvenNumbers(4, 6);
 		sumOfTwoEvenNumbers(4, 5); 
+		sumOfTwoOddNumbers(3, 5);
+		sumOfTwoOddNumbers(4, 5); 
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -25,6 +27,15 @@ public class Main {
 			System.out.println(first + second);
 		} else {
 		System.out.println("Not Even Numbers");
+		}
+	}
+	
+	static void sumOfTwoOddNumbers (int first, int second) {
+		if (first % 2 != 0 
+		 & second % 2 != 0) {
+			System.out.println(first + second);
+		} else {
+		System.out.println("Not Odd Numbers");
 		}
 	}
 	
