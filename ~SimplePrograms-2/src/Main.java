@@ -12,6 +12,7 @@ public class Main {
 		sumOfTwoOddNumbers(4, 5); 
 		int [] numbers = {5, 6, 7, 8, 9};
 		System.out.println(minNumber(numbers));
+		System.out.println(maxNumber(numbers));
 	}
 	
 	static int sumOfTwoNumbers (int first, int second) {
@@ -49,6 +50,16 @@ public class Main {
 			}
 		}
 		return min;
+	}
+	
+	static int maxNumber(int [] numbers) {
+		int max = numbers[0];
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] > max) {
+				max = numbers[i];
+			}
+		}
+		return max;
 	}
 	
 	
