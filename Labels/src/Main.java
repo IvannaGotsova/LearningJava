@@ -10,13 +10,17 @@ public class Main {
 		
 		JLabel labelExample = new JLabel();
 		labelExample.setText("TEXT EXAMPLE");
-
+		labelExample.setHorizontalTextPosition(JLabel.RIGHT);
+		labelExample.setVerticalTextPosition(JLabel.TOP);
+		
 		JFrame jframeExample = new JFrame();
+
 		jframeExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jframeExample.setBounds(250, 250, 250, 250);
 		
 		jframeExample.setVisible(true);
 		jframeExample.add(labelExample);
+		jframeExample.pack();
 	}
 
 }
