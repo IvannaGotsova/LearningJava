@@ -10,9 +10,8 @@ public class Main {
 		
 		JLabel labelExample = new JLabel();
 		labelExample.setText("TEXT EXAMPLE");
-		
-		JFrame jframeExample = new JFrame();
 
+		JFrame jframeExample = new JFrame();
 		jframeExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jframeExample.setBounds(250, 250, 250, 250);
 		
