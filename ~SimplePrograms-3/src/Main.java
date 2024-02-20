@@ -1,7 +1,8 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
 import java.awt.Color;
 import java.awt.GridLayout;
-
-import javax.swing.JFrame;
 
 public class Main {
 
@@ -11,6 +12,12 @@ public class Main {
 		// Create a new JFrame
         JFrame frameExample = new JFrame("My First Frame Example");
  
+        // Create a new JLabel
+        JLabel labelExample = new JLabel("My First Label Example");
+ 
+        // Add the label to the frame
+        frameExample.add(labelExample);
+        
         // Set frame properties
         frameExample.setSize(500, 500); // Set the size of the frame
         frameExample.setLocationRelativeTo(null); //set your frame on the screen
