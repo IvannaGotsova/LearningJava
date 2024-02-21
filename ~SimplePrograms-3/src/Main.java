@@ -49,6 +49,8 @@ public class Main {
         // Create a panel with a button
         JPanel panelExample = new JPanel();
         JButton buttonExample = new JButton("Click Me");
+        frameExample.setLayout(null);
+        buttonExample.setBounds(400, 0, 100, 70);
         panelExample.add(buttonExample);  
         frameExample.add(buttonExample);
         
