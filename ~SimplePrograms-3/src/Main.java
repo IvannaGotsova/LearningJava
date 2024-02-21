@@ -4,10 +4,12 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
 
 public class Main {
 
@@ -31,18 +33,18 @@ public class Main {
          
         // Create a menu bar
         JMenuBar menuBarExample = new JMenuBar();
-        JMenu fileMenuExample = new JMenu("File");
+        JMenu fileMenuExample = new JMenu("Main");
         JMenuItem openItemExample = new JMenuItem("Open");
         JMenuItem exitItemExample = new JMenuItem("Exit");
         fileMenuExample.add(openItemExample);
-        fileMenuExample.addSeparator();
-        fileMenuExample.add(openItemExample);
-        menuBarExample.add(exitItemExample);
+        fileMenuExample.add(exitItemExample);
+        menuBarExample.add(fileMenuExample);
+        frameExample.setJMenuBar(menuBarExample);
         
         // Create a panel with a button
         JPanel panelExample = new JPanel();
         JButton buttonExample = new JButton("Click Me");
-        panelExample.add(buttonExample);
+        panelExample.add(buttonExample);      
         
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
