@@ -1,8 +1,10 @@
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JPanel;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -36,6 +38,11 @@ public class Main {
         fileMenuExample.addSeparator();
         fileMenuExample.add(openItemExample);
         menuBarExample.add(exitItemExample);
+        
+        // Create a panel with a button
+        JPanel panelExample = new JPanel();
+        JButton buttonExample = new JButton("Click Me");
+        panelExample.add(buttonExample);
         
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
