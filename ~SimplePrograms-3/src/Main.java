@@ -73,6 +73,13 @@ public class Main {
             }
         });
         
+        // Add action to the Exit button
+        exitItemExample.addActionListener((ActionListener) new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frameExample, "Button Exited!");
+            }
+        });
+        
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
