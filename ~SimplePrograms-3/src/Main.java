@@ -44,7 +44,8 @@ public class Main {
         // Create a panel with a button
         JPanel panelExample = new JPanel();
         JButton buttonExample = new JButton("Click Me");
-        panelExample.add(buttonExample);      
+        panelExample.add(buttonExample);  
+        frameExample.add(buttonExample);
         
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
