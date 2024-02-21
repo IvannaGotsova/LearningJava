@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Main {
 
@@ -46,6 +47,13 @@ public class Main {
         JButton buttonExample = new JButton("Click Me");
         panelExample.add(buttonExample);  
         frameExample.add(buttonExample);
+        
+        // Add action to the button
+        buttonExample.addActionListener((ActionListener) new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frameExample, "Button Clicked!");
+            }
+        });
         
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
