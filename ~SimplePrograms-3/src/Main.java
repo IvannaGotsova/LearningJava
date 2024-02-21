@@ -66,6 +66,13 @@ public class Main {
             }
         });
         
+        // Add action to the Save button
+        saveItemExample.addActionListener((ActionListener) new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frameExample, "Button Saved!");
+            }
+        });
+        
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
