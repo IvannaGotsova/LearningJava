@@ -1,5 +1,8 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -24,6 +27,16 @@ public class Main {
         frameExample.getContentPane().setBackground(Color.BLUE); // Set the background to blue
         frameExample.getContentPane().setBackground(new Color(0, 206, 250)); // Set the background to custom blue color
          
+        // Create a menu bar
+        JMenuBar menuBarExample = new JMenuBar();
+        JMenu fileMenuExample = new JMenu("File");
+        JMenuItem openItemExample = new JMenuItem("Open");
+        JMenuItem exitItemExample = new JMenuItem("Exit");
+        fileMenuExample.add(openItemExample);
+        fileMenuExample.addSeparator();
+        fileMenuExample.add(openItemExample);
+        menuBarExample.add(exitItemExample);
+        
         // Close operation
         frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
