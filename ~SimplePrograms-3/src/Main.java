@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -37,8 +38,10 @@ public class Main {
         JMenuBar menuBarExample = new JMenuBar();
         JMenu fileMenuExample = new JMenu("Main");
         JMenuItem openItemExample = new JMenuItem("Open");
+        JMenuItem saveItemExample = new JMenuItem("Save");
         JMenuItem exitItemExample = new JMenuItem("Exit");
         fileMenuExample.add(openItemExample);
+        fileMenuExample.add(saveItemExample);
         fileMenuExample.add(exitItemExample);
         menuBarExample.add(fileMenuExample);
         frameExample.setJMenuBar(menuBarExample);
@@ -53,6 +56,13 @@ public class Main {
         buttonExample.addActionListener((ActionListener) new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(frameExample, "Button Clicked!");
+            }
+        });
+        
+        // Add action to the Open button
+        openItemExample.addActionListener((ActionListener) new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frameExample, "Button Opened!");
             }
         });
         
