@@ -23,19 +23,19 @@ public class Main {
 		panelExampleOne.setBackground(Color.blue);
 		panelExampleOne.setOpaque(true);
 		panelExampleOne.setBounds(50, 50, 100, 100);
-		jLayeredPane.add(panelExampleOne);
+		jLayeredPane.add(panelExampleOne, Integer.valueOf(0));
 		
 		JPanel panelExampleTwo = new JPanel();
 		panelExampleTwo.setBackground(Color.green);
 		panelExampleTwo.setOpaque(true);
 		panelExampleTwo.setBounds(100, 100, 100, 100);
-		jLayeredPane.add(panelExampleTwo);
+		jLayeredPane.add(panelExampleTwo, Integer.valueOf(1));
 		
 		JPanel panelExampleThree = new JPanel();
 		panelExampleThree.setBackground(Color.red);
 		panelExampleThree.setOpaque(true);
 		panelExampleThree.setBounds(150, 150, 100, 100);
-		jLayeredPane.add(panelExampleThree);
+		jLayeredPane.add(panelExampleThree, Integer.valueOf(2));
 		
 		frameExample.add(jLayeredPane);
 		frameExample.setVisible(true);
