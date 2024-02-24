@@ -23,6 +23,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 if(e.getSource()==comboBoxExample) {
                 	System.out.println(comboBoxExample.getSelectedItem());
+                	System.out.println(comboBoxExample.getSelectedIndex());
                 }
                 	
             }
