@@ -11,7 +11,7 @@ public class Main {
 		float floatExample = 10.33333f;
 		double doubleExample = 22.3;
 		char charExample = 'a';
-		String stringExample = "Example for string in Java";
+		String stringExample = "Example for string in Java";     
 		
 		System.out.println("My boolean example is: " + booleanExample);
 		System.out.println("My byte example is: " + byteExample);
