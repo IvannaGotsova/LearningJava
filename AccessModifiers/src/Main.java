@@ -9,6 +9,7 @@ public class Main {
 		
 		Public publicNew = new Public();
 		String stringPublic = publicNew.publicExample;
+				
 	}
 
 }

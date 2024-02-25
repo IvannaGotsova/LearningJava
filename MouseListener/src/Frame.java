@@ -15,7 +15,7 @@ public class Frame extends JFrame implements MouseListener{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(null);
 		this.setSize(500, 500);
-		//this.addMouseListener(this);
+		this.addMouseListener(this);
 		
 		labelExample = new JLabel();
 		labelExample.setBackground(Color.yellow);
@@ -23,7 +23,7 @@ public class Frame extends JFrame implements MouseListener{
 		labelExample.setOpaque(true);
 		labelExample.setText("EXAMPLE");
 		this.add(labelExample);
-		labelExample.addMouseListener(this);
+		
 		
 	
 

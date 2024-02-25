@@ -14,7 +14,7 @@ public class Main {
 		JFrame frameExample = new JFrame();
 		frameExample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameExample.setSize(250, 250);
-		frameExample.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		frameExample.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5 ));
 		frameExample.setVisible(true);
 		
 		JPanel panelExampleOne = new JPanel();
