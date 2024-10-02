@@ -13,7 +13,7 @@ public class Main {
 		secondNumber = scanner.nextInt();
 		int sum = firstNumber + secondNumber;
 		System.out.println("Sum is: " + sum);
-
+      
 	}
 
 }
