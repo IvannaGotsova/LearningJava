@@ -1,3 +1,5 @@
+package Arrays.src;
+
 import java.util.Arrays;
 
 public class Main {
