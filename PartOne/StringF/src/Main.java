@@ -1,3 +1,5 @@
+package StringF.src;
+
 
 public class Main {
 
