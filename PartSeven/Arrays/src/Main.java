@@ -11,7 +11,7 @@ public class Main {
 			numbers[i] /= 10;
 			System.out.println(numbers[i]); 
 		}
-
+		
 	}
 
 }
