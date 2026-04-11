@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
 
@@ -11,6 +12,10 @@ public class Main {
 			numbers[i] /= 10;
 			System.out.println(numbers[i]); 
 		}
+		
+		Arrays.fill(numbers, 11);
+
+		Arrays.stream(numbers).forEach(System.out::println);
 		
 	}
 
