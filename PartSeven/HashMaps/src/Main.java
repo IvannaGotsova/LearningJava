@@ -20,10 +20,13 @@ public class Main {
 		
         System.out.println(numbers); 
         
-        for (Integer num : numbers.keySet()) {
-            System.out.println("Number: " + num + ", Name: " + numbers.get(num));
+        for (HashMap.Entry<Integer, String> entry : numbers.entrySet()) {
+            String newValue = "Number " + entry.getValue();
+            entry.setValue(newValue);       
         }
-
+        
+        System.out.println(numbers); 
+              
 	}
 
 }
