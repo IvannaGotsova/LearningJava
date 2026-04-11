@@ -28,6 +28,11 @@ public class Main {
 		for (Integer num : arrayList) {
 			System.out.println(num);
 		}
+		
+		for(int i = 0; i < 10; i++) {
+			System.out.println(arrayList.get(i));
+		}
+		
 	}
 
 }
