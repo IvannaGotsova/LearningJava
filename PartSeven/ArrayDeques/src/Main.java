@@ -27,6 +27,15 @@ public class Main {
 			System.out.println("Last number is: " + arrayDeque.peek());
 			System.out.println("Removed: " + arrayDeque.pop());
 		}
+		
+		for(int i = 1; i <= 10; i++) {
+			arrayDeque.addFirst(i);
+			arrayDeque.addLast(i);
+		}
+		
+		for (Integer num : arrayDeque) {
+			System.out.println(num);
+		}
 	}
 
 }
