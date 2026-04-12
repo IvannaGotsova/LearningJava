@@ -26,6 +26,14 @@ public class Main {
             System.out.println("Number: " + num + ", Name: " + numbers.get(num));
         }
         
+        if(numbers.containsKey(1)) {
+        	System.out.println("Number: " + 1 + ", Name: " + numbers.get(1));
+        }
+        
+        if(numbers.containsValue("One")) {
+        	System.out.println("One");
+        }
+        
 	}
 
 }
