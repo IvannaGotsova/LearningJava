@@ -22,6 +22,10 @@ public class Main {
 		numbers.add(1);
 		
 		System.out.println(numbers); 
+		
+		numbers.add(null);
+		
+		System.out.println(numbers); 
 	}
 
 }
