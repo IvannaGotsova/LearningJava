@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
 
@@ -25,6 +26,17 @@ public class Main {
             System.out.println(); 
         }
 		
+		int [] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		for (int n : numbers) System.out.print(n + " ");
+		System.out.println(); 
+		
+		for (int i = jaggedArray.length - 1; i >= 0 ; i--) {
+            for (int j = 0; j < jaggedArray[i].length; j++) {
+            	jaggedArray[i][j] = j;
+                System.out.print(jaggedArray[i][j] + " ");
+            }
+            System.out.println(); 
+        }
 		
 	}
 
