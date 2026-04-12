@@ -32,6 +32,8 @@ public class Main {
 		
 		System.out.println(numbers);
 		
+		numbers.forEach(System.out::println);
+		
 	}
 
 }
