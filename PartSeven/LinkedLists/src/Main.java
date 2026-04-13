@@ -30,6 +30,23 @@ public class Main {
 		numbers.remove("Eleven");
 		
 		System.out.println(numbers);
+		
+		numbers.addFirst("Zero");
+		numbers.addLast("Eleven");
+		
+		System.out.println(numbers);
+		
+		System.out.println(numbers.peekFirst());
+		numbers.pollFirst();
+		
+		System.out.println(numbers);
+		
+		System.out.println(numbers.peekLast());
+		numbers.pollLast();
+		
+		System.out.println(numbers);
+		
+		
 	}
 
 }
