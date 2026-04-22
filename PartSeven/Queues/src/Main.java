@@ -9,6 +9,7 @@ public class Main {
 
         Queue<String> numbers = new LinkedList<>();
 		
+        numbers.add("Zero");
 		numbers.add("One");
 		numbers.add("Two");
 		numbers.add("Three");
@@ -27,6 +28,12 @@ public class Main {
 		System.out.println(numbers);
 		
 		System.out.println(numbers.peek());
+		
+		System.out.println();
+		
+		for (String number : numbers) {
+		    System.out.println(number);
+		}
 		
 	}
 
