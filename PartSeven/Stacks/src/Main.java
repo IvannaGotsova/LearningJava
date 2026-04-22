@@ -31,6 +31,11 @@ public class Main {
         numbers.pop();
 		
 		System.out.println(numbers);
+		
+		for (String number : numbers) {
+		    System.out.println(number);
+		}
+		
 	}
 
 }
