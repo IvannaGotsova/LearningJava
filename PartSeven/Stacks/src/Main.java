@@ -35,7 +35,7 @@ public class Main {
 		for (String number : numbers) {
 		    System.out.println(number);
 		}
-		
+		        
 	}
 
 }
