@@ -26,6 +26,12 @@ public class Main {
 		System.out.println(numbers);
 		
 		System.out.println(numbers.peek());
+		
+		numbers.offer("Zero");
+		numbers.offer("Zero");
+		numbers.offer("Zero");
+		
+		System.out.println(numbers);
 	}
 
 }
