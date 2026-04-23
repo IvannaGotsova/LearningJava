@@ -24,6 +24,11 @@ public class Main {
         for (Integer num : numbers.keySet()) {
             System.out.println("Number: " + num + ", Name: " + numbers.get(num));
         }
+        
+        System.out.println(numbers.headMap(6));
+        System.out.println(numbers.subMap(5, 7));
+        System.out.println(numbers.tailMap(6));
+        
 	}
 
 }
