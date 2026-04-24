@@ -32,6 +32,10 @@ public class Main {
         numbers.remove("Eleven");
 		
 		System.out.println(numbers);
+		
+		System.out.println(numbers.contains("Zero"));
+		System.out.println(numbers.contains("One"));
+		
 	}
 
 }
