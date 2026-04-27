@@ -35,7 +35,7 @@ public class Main {
 		
 		for (Integer num : arrayDeque) {
 			System.out.println(num);
-		}
+		}      
 	}
 
 }
