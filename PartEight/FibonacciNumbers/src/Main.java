@@ -5,7 +5,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		
-		checkFibonacciNumbers(0);
+		checkFibonacciNumbers(50);
 		
 	}
 	
