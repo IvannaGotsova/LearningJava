@@ -5,7 +5,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		
-		checkLucasNumbers(50);
+		checkLucasNumbers(0);
 	}
 	
 	private static void checkLucasNumbers(int numbers) {
@@ -13,7 +13,8 @@ public class Main {
 		   int firstNumber = 2;
 		   int secondNumber = 1;
 		   
-		   System.out.print(firstNumber + ", " + secondNumber);
+		   if (numbers == 0) System.out.print(firstNumber);
+		   if (numbers >= 1) System.out.print(firstNumber + ", " + secondNumber);
 		   
 		   for (int i = 2; i <= numbers; i++) {
 			   
