@@ -58,5 +58,9 @@ public class Main
         numbers = new LinkedList<>(setNumbers);
         
         System.out.println(numbers);
+        
+        Collections.reverse(numbers);
+           
+        System.out.println(numbers);
 	}
 }
