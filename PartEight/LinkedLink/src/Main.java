@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Collections;
 
 public class Main
 {
@@ -45,7 +46,11 @@ public class Main
         
         int indexToChanged = numbers.size() / 2;
         
-         numbers.add(indexToChanged, 68);
+        numbers.add(indexToChanged, 68);
+        
+        System.out.println(numbers);
+        
+        Collections.sort(numbers);
         
         System.out.println(numbers);
         
