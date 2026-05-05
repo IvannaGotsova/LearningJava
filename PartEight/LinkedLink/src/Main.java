@@ -33,5 +33,11 @@ public class Main
         
         System.out.println("The lowest number is " + minNumber);
         
+        int removedNumber = minNumber;
+        
+        numbers.removeIf(n -> n.equals(removedNumber));
+        
+        System.out.println("The removed number is " + minNumber);
+        
 	}
 }
