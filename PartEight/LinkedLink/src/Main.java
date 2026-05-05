@@ -43,5 +43,11 @@ public class Main
         
         System.out.println(numbers);
         
+        int indexToChanged = numbers.size() / 2;
+        
+         numbers.add(indexToChanged, 68);
+        
+        System.out.println(numbers);
+        
 	}
 }
