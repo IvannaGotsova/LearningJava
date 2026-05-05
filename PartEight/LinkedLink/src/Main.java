@@ -39,5 +39,9 @@ public class Main
         
         System.out.println("The removed number is " + minNumber);
         
+        numbers.add(0, 77);
+        
+        System.out.println(numbers);
+        
 	}
 }
