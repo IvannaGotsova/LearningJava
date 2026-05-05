@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Collections;
+import java.util.*;
 
 public class Main
 {
@@ -54,5 +53,10 @@ public class Main
         
         System.out.println(numbers);
         
+        HashSet<Integer> setNumbers = new HashSet<>(numbers);
+        
+        numbers = new LinkedList<>(setNumbers);
+        
+        System.out.println(numbers);
 	}
 }
