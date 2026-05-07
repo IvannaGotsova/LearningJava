@@ -28,5 +28,9 @@ public class Main
 		
 		System.out.println(numbers.size());
 		
+		System.out.println(numbers.contains(8));
+		numbers.clear();
+		System.out.println(numbers);
+		
 	}
 }
