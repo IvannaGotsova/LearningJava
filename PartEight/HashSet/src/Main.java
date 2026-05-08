@@ -9,6 +9,17 @@ public class Main {
 		
 		System.out.println(numbers);
 		
+		numbers.add(0);
+		System.out.println(numbers);
+		
+		numbers.add(11);
+		System.out.println(numbers);
+		
+		numbers.remove(11);
+		System.out.println(numbers);
+		
+		System.out.println(numbers.contains(0));
+		
 		
 	}
 
