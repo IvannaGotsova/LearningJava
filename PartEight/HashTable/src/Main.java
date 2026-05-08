@@ -25,6 +25,11 @@ public class Main {
 			
 			System.out.println(numbers.containsKey(4));
 			System.out.println(numbers.containsValue("Four"));
+			
+			System.out.println(numbers.size());
+			System.out.println(numbers.isEmpty());
+			numbers.clear();
+			System.out.println(numbers);
 	}
 
 }
