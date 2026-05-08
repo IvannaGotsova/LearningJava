@@ -21,6 +21,12 @@ public class Main {
 		System.out.println(numbers.contains(0));
 		
 		
+		System.out.println(numbers.size());
+		System.out.println(numbers.isEmpty());
+		numbers.clear();
+		System.out.println(numbers);
+		
+		
 	}
 
 }
