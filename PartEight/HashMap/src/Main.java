@@ -15,6 +15,14 @@ Map<Integer, Integer> numbers = new HashMap<>(Map.of(0, 10, 1, 11, 2, 12, 3, 13,
 		numbers.put(0, 10);
 		System.out.println(numbers);
 		
+		numbers.computeIfAbsent(1, k -> 1);
+		numbers.computeIfAbsent(6, k -> 16);
+		System.out.println(numbers);
+		
+		numbers.merge(7, 77, Integer::sum);
+		numbers.merge(6, 50, Integer::sum);
+		System.out.println(numbers);
+		
 		System.out.println(numbers.get(0));
 		
 		numbers.remove(0, 11);
