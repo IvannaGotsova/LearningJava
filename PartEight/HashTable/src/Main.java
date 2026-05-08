@@ -14,6 +14,17 @@ public class Main {
 	        ));
 			
 			System.out.println(numbers);
+			
+			numbers.put(6, "Six");
+			System.out.println(numbers);
+			
+			System.out.println(numbers.get(4));
+			
+			numbers.remove(6);
+			System.out.println(numbers);
+			
+			System.out.println(numbers.containsKey(4));
+			System.out.println(numbers.containsValue("Four"));
 	}
 
 }
