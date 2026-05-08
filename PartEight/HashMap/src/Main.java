@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-        Map<Integer, Integer> numbers = new HashMap<>(Map.of(0, 10, 1, 11, 2, 12, 3, 13, 4, 14, 5, 15));
+Map<Integer, Integer> numbers = new HashMap<>(Map.of(0, 10, 1, 11, 2, 12, 3, 13, 4, 14, 5, 15));
 		
 		System.out.println(numbers);
 		
@@ -22,6 +22,12 @@ public class Main {
 		
 		System.out.println(numbers.containsKey(0));
 		System.out.println(numbers.containsValue(0));
+
+		System.out.println(numbers.size());
+		System.out.println(numbers.isEmpty());
+		
+		numbers.clear();
+		System.out.println(numbers);
 	}
 
 }
