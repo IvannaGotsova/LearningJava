@@ -6,49 +6,22 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+        ShoppingList shoppingList = new ShoppingList("Booktore");
+        
+        System.out.println("Created Shopping List");
+        
+        System.out.println("First");
 
+        System.out.println("Numbers of items: " + shoppingList.getShoppingListItems().size());
+
+        System.out.println("Second");
+        
+        System.out.println("Numbers of items: " + shoppingList.getShoppingListItems().size());
+	   
 	}
 	
-	public class ShoppingList {
-		
-	    private String shoppingListTitle;
-	    
-	    private List<String> shoppingListItems = null; 
-	    
-	    public ShoppingList(String shoppingListTitle) {
-	    	
-	        this.shoppingListTitle = shoppingListTitle;
-	    }
-
-	    private List<String> getItemsShoppingList() {
-	    	
-	        System.out.println("Reading shopping list items");
-	        
-	        List<String> shoppingListItems = new ArrayList<>();
-	        
-	        shoppingListItems.add("Notebook");
-	        shoppingListItems.add("Pens");
-	        shoppingListItems.add("Sketchpad");
-	        shoppingListItems.add("Pencils");
-	        shoppingListItems.add("Pen");
-	        shoppingListItems.add("Pencil");
-	        shoppingListItems.add("Book");
-	        shoppingListItems.add("Paintings");
-	        shoppingListItems.add("Gray pencil");
-	        shoppingListItems.add("Black pen");
-	        
-	        return shoppingListItems;
-	    }
-
-	    public List<String> getShoppingListItems() {
-	        
-	    	if (shoppingListItems == null) {
-	    		
-	    		shoppingListItems = getShoppingListItems();
-	        }
-	        return shoppingListItems;
-	    }
-	}
+	
 }
 
 
