@@ -36,7 +36,7 @@ public class ShoppingList {
 	        
 	    	if (shoppingListItems == null) {
 	    		
-	    		shoppingListItems = getItemsShoppingList();
+	    		shoppingListItems = getItemsShoppingList();   
 	        }
 	        return shoppingListItems;
 	    }
