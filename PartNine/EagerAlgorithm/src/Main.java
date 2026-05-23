@@ -8,6 +8,10 @@ public class Main {
         
         System.out.println("Created Shopping List");
         
+        System.out.println("First");
+
+        System.out.println("Numbers of items: " + shoppingList.getShoppingListItems().size());
+
         
 	}
 
