@@ -12,7 +12,10 @@ public class Main {
 
         System.out.println("Numbers of items: " + shoppingList.getShoppingListItems().size());
 
+        System.out.println("Second");
         
+        System.out.println("Numbers of items: " + shoppingList.getShoppingListItems().size());
+	   
 	}
 
 }
