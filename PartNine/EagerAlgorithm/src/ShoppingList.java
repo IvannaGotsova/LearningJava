@@ -34,11 +34,7 @@ public class ShoppingList {
 	    }
 
 	    public List<String> getShoppingListItems() {
-	        
-	    	if (shoppingListItems == null) {
-	    		
-	    		shoppingListItems = getItemsShoppingList();   
-	        }
+	       
 	        return shoppingListItems;
 	    }
 	}
