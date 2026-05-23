@@ -5,11 +5,12 @@ public class ShoppingList {
 		
 	    private String shoppingListTitle;
 	    
-	    private List<String> shoppingListItems = null; 
+	    private List<String> shoppingListItems; 
 	    
 	    public ShoppingList(String shoppingListTitle) {
 	    	
 	        this.shoppingListTitle = shoppingListTitle;
+	        this.shoppingListItems = getItemsShoppingList(); 
 	    }
 
 	    private List<String> getItemsShoppingList() {
