@@ -14,6 +14,7 @@ public class GreadyAlgorithm {
 	        for (int money : moneyATM) {
 
 	            if (amount >= money) {
+	            	
 	                int count = amount / money; 
 	                amount = amount % money;    
 	                
@@ -23,5 +24,12 @@ public class GreadyAlgorithm {
 	        
 	        }
 	        
+	        System.out.println("moneyATM");
+	        
+	        for (Map.Entry<Integer, Integer> count : moneyCounter.entrySet()) {
+	        	
+	            System.out.println(count.getValue() + " money " + count.getKey());
+	            
+	        }
 	  }
 }
