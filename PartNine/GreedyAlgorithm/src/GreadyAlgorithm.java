@@ -10,8 +10,18 @@ public class GreadyAlgorithm {
 	        Map<Integer, Integer> moneyCounter = new HashMap<>();
 
 	        System.out.println("Amount: " + amount);
+	        
+	        for (int money : moneyATM) {
 
+	            if (amount >= money) {
+	                int count = amount / money; 
+	                amount = amount % money;    
+	                
+	                moneyCounter.put(money, count);
+	                System.out.println(count + " х " + money + " Leaving: " + amount);
+	            }
 	        
 	        }
 	        
+	  }
 }
