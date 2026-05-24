@@ -24,11 +24,11 @@ public class GreadyAlgorithm {
 	        
 	        }
 	        
-	        System.out.println("moneyATM");
+	        System.out.println("moneyATM: Summary");
 	        
 	        for (Map.Entry<Integer, Integer> count : moneyCounter.entrySet()) {
 	        	
-	            System.out.println(count.getValue() + " money " + count.getKey());
+	            System.out.println(count.getValue() + " x " + count.getKey());
 	            
 	        }
 	  }
