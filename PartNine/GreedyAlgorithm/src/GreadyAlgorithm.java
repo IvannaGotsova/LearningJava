@@ -24,7 +24,7 @@ public class GreadyAlgorithm {
 	        
 	        }
 	        
-	        System.out.println("moneyATM: Summary");
+	        System.out.println("Мoney ATM: Summary");
 	        
 	        for (Map.Entry<Integer, Integer> count : moneyCounter.entrySet()) {
 	        	
