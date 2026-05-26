@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		 int number = 0;
+		 int number = 5;
 		    
 		    if (number < 0) {
 		        
