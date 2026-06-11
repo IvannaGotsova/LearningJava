@@ -5,8 +5,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		   String word = "word";
-		    
 
+	        
 	        int left = 0;
 	        int right = word.length() - 1;
 	        
@@ -22,7 +22,7 @@ public class Main {
 	            right--;
 	        }
 	        
-
+	        System.out.println("Palindrome");
 		}
 		
 	}
