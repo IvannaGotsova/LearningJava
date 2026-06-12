@@ -5,7 +5,11 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		   String word = "word";
-
+		    
+	        if (word == null) {
+	            
+	            System.out.println("Input must be string!");
+	        }
 	        
 	        int left = 0;
 	        int right = word.length() - 1;
