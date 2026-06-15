@@ -9,7 +9,7 @@ public static void main(String[] args) {
             
             System.out.println("Input must be bigger than 0!");
         }
-        
+      
         int original = number;
         int reversed = 0;
         
