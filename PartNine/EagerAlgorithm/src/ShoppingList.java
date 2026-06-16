@@ -28,7 +28,7 @@ public class ShoppingList {
 	        shoppingListItems.add("Book");
 	        shoppingListItems.add("Paintings");
 	        shoppingListItems.add("Gray pencil");
-	        shoppingListItems.add("Black pen");
+	        shoppingListItems.add("Black pen");                       
 	        
 	        return shoppingListItems;
 	    }
